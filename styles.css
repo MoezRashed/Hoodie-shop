@@ -1,14 +1,24 @@
+/* #8EB4E5
+   #55a364 
+*/
 *
 {
-    font-family: 'Cairo', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding:0;
+    z-index: 1000; /* Set a high z-index value */
+}
 body {
     margin: 0;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .black-friday
 {
@@ -73,63 +83,61 @@ body {
 {
     text-decoration: underline 3px;
 }
+.duck-duck-goose 
+{
+    /* max-width: 1300px; */
+    /* position: relative; */
+    margin-top: 95px;
+    display: flex;
+}
 .duck-duck-goose img {
-    width: 100%;
+    flex: 1;
+    width: 600px;
+    margin: 2vw;
     height: auto;
     display: block;
     border-radius: 35px;
 }
-.duck-duck-goose 
+.text
 {
-    
-    max-width: 1300px;
-    position: relative;
-    margin: 0 auto; /* Center the section horizontally */
-}
-.overlay-text {
-    position: absolute;
-    top: 24%; /* Adjust as needed */
-    left: 25%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
-    font-family: 'Marhey', sans-serif;
-    font-size: 33px;
+    padding-top: 6vw;
+    padding-left: 5vw;
+    padding-right:5vw ;
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 25px;
     font-weight:bolder;
     text-align:center;
-    color: rgb(0, 0, 0); 
 }
 .brand
 {
-    font-family: 'Marhey', sans-serif;
-    /* font-family: 'Kdam Thmor Pro', sans-serif; */
-    color: rgb(255, 255, 255);
-    font-size: 37px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(199,184,94);
+    font-size: 32px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .overlay-button
 {
-    position: absolute;
-    top: 90%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-weight:bolder;
     font-size: 21px;
-    background:linear-gradient(to right, #55a364, #000000) ;
-    border-radius: 35px;
+    /* background:linear-gradient(to right, #55a364, #000000) ; */
+    background-color: black;
+    /* border-radius: 35px; */
     padding: 20px;
     color: rgb(199,184,94);
     border:0px;
 }
 .overlay-button:hover
 {
-    box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.6);
+    box-shadow: 3px 3px 4px #b2ccee;
 }
 .overlay-button:active,
 .overlay-button:focus
 {
-    background:linear-gradient(to left, #55a364, #000000); 
+    /* background:linear-gradient(to left, #55a364, #000000);  */
 }
-.footer-container
+.footer
 {
-   height: 70px;
+   background-color: #b2ccee;
 }
