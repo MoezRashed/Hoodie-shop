@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta author="m3tez" charset="utf-8">
+        <Title>Houdi-ni | Magical Hoodies </Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Kdam+Thmor+Pro&family=Marhey:wght@600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function search() {
+                // Perform your search action here
+                // var searchTerm = document.getElementById('searchInput').value;
+                alert('Performing search for: ');
+                // Add your logic to handle the search, e.g., redirect to a search results page
+            }
+    
+            function checkEnter(event) {
+                if (event.key === 'Enter') {
+                    search(); // Call the search function when Enter is pressed
+                }
+            }
+        </script>
+        </head>
+
+    <body>
+        <header>
+            <div class="black-friday">
+                BLACK FRIDAY | 50% SALE on selected items
+            </div>
+            <nav class="nav-container">
+                <div>
+                    <a href="index.html">
+                        <img class="logo" src="Images/houdi-ni-duck.png">
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li style="margin-right: 100px; width: fit-content;">
+                        <input type="text" name="search" id="search" placeholder="What are you looking for" onkeydown="checkEnter(event)">
+                    </li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">New</a></li>
+                    <li>|</li>
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign-Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- redirect photo section  -->
+        <section class="duck-duck-goose">
+            <img src="Images/Duck.gif">
+            <div class="overlay-text">
+                "Even a duck looks cool in <span class="brand">HOUDI-NI</span>"
+                <br>
+                -Louie Duck
+            </div>
+            <button class="overlay-button">SHOP NOW</button>
+        </section>
+        <!-- shop our best sellers -->
+        <section></section>
+        <!-- OUR MISSION -->
+        <section></section>
+        <!-- footer section -->
+        <section>
+            <img src="Images/footer.png" style="background-repeat: no-repeat; width: 100%; display: block;">
+            <footer class="footer-container">
+                &copy; 2023, <a href="#index.html">HOUDI-NI</a>. <br> All rights reserved.
+            </footer>
+        </section>
+    </body>
+</html>

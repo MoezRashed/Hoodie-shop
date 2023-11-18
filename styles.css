@@ -1,0 +1,136 @@
+*
+{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    /* font-family: 'Marhey', sans-serif; */ */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+.black-friday
+{
+    text-align: center;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.logo
+{
+    width: 250px;
+    height: auto;
+    align-items: center;
+    
+}
+.nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 0px;
+    /* border: 4px solid brown; */
+}
+.nav-container div
+{
+    /* flex:1 1 0%; */
+    box-sizing: border-box;
+    /* border: 4px solid brown; */
+    padding: 1px;
+    margin: 1px;
+    
+}
+.nav-list 
+{
+    display: flex;
+    list-style: none;
+    /* border: 4px solid brown; */
+}
+.nav-list li
+{
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    /* flex: 1; */
+    /* border: 4px solid brown; */
+    margin:17px;
+    padding: 1px;
+    align-items: center;
+    margin-bottom: 0px;
+
+}
+.nav-list a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-list a:hover
+{
+    text-decoration: underline 3px;
+}
+.duck-duck-goose img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 35px;
+}
+.duck-duck-goose 
+{
+    
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto; /* Center the section horizontally */
+}
+.overlay-text {
+    position: absolute;
+    top: 24%; /* Adjust as needed */
+    left: 25%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    font-family: 'Marhey', sans-serif;
+    font-size: 33px;
+    font-weight:bolder;
+    text-align:center;
+    color: rgb(0, 0, 0); 
+}
+.brand
+{
+    font-family: 'Marhey', sans-serif;
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+    color: rgb(255, 255, 255);
+    font-size: 37px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.overlay-button
+{
+    position: absolute;
+    top: 90%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight:bolder;
+    font-size: 21px;
+    background:linear-gradient(to right, #55a364, #000000) ;
+    border-radius: 35px;
+    padding: 20px;
+    color: rgb(199,184,94);
+    border:0px;
+}
+.overlay-button:hover
+{
+    box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.6);
+}
+.overlay-button:active,
+.overlay-button:focus
+{
+    background:linear-gradient(to left, #55a364, #000000); 
+}
+.footer-container
+{
+   height: 70px;
+}
