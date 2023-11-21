@@ -1,0 +1,125 @@
+/* #8EB4E5
+   #55a364 
+    color: rgb(199,184,94);
+*/
+
+*
+{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(Images/back7.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#8EB4E5 ; */
+    /* background-repeat: repeat; */
+    /* background-size: 65px; */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.wrapper
+{
+    width: 420px;
+    background: transparent; /* w dah*/
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px 40px;
+    backdrop-filter: blur(20px);
+}
+.wrapper  h1
+{
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+.wrapper .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box  input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black; /* w dah */ 
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder
+{
+    color: black;  /* haghayar dah */
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember-forget
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forget label input
+{
+    accent-color: black; /* change */
+    margin-right : 3px;
+}
+.remember-forget a
+{
+    color: black;
+    text-decoration: none;
+}
+.remember-forget a:hover
+{
+    text-decoration: underline;
+}
+.wrapper .btn
+{
+    font-weight:bolder;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    outline: none;
+    border:none;
+    background: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: rgb(199,184,94);
+    cursor: pointer;
+}
+.wrapper .register-link
+{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0  15px;
+}
+.register-link p a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.register-link p a:hover
+{
+    text-decoration: underline;
+}

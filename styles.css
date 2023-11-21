@@ -1,5 +1,6 @@
 /* #8EB4E5
    #55a364 
+    color: rgb(199,184,94);
 */
 *
 {
@@ -26,7 +27,7 @@ body {
     background-color: black;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: rgb(199,184,94);
 }
 .logo
 {
@@ -87,6 +88,8 @@ body {
 {
     /* max-width: 1300px; */
     /* position: relative; */
+    /* border: 4px solid brown; */
+    width: 100%;
     margin-top: 95px;
     display: flex;
 }
@@ -95,11 +98,13 @@ body {
     width: 600px;
     margin: 2vw;
     height: auto;
-    display: block;
+    /* display: block; */
     border-radius: 35px;
 }
-.text
+.duck-duck-goose .text
 {
+    width: 50%;
+    /* display: block; */
     padding-top: 6vw;
     padding-left: 5vw;
     padding-right:5vw ;
@@ -112,9 +117,9 @@ body {
 .brand
 {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    color: rgb(199,184,94);
+    color: #8EB4E5;
     font-size: 32px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 .overlay-button
 {
@@ -132,12 +137,11 @@ body {
 {
     box-shadow: 3px 3px 4px #b2ccee;
 }
-.overlay-button:active,
-.overlay-button:focus
-{
-    /* background:linear-gradient(to left, #55a364, #000000);  */
-}
 .footer
 {
    background-color: #b2ccee;
+}
+.text-box {
+    border: 1px solid #ccc; /* 1px solid border with a light gray color */
+    padding: 10px; /* Optional padding for better visual appearance */
 }
