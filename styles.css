@@ -11,11 +11,12 @@
 }
 header {
     position: fixed;
+    height: auto;
     top: 0;
     width: 100%;
     background-color: #fff;
     padding:0;
-    z-index: 1000; /* Set a high z-index value */
+    z-index: 1000; 
 }
 body {
     margin: 0;
@@ -142,6 +143,28 @@ body {
    background-color: #b2ccee;
 }
 .text-box {
-    border: 1px solid #ccc; /* 1px solid border with a light gray color */
-    padding: 10px; /* Optional padding for better visual appearance */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.container-Product
+{
+    /* border: 4px solid brown; */
+    margin-top: 95px;
+}
+.overlay-button2
+{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight:bolder;
+    font-size: 21px;
+    margin: 5px;
+    /* background:linear-gradient(to right, #55a364, #000000) ; */
+    background-color: rgb(199,184,94);
+    /* border-radius: 35px; */
+    padding: 20px;
+    color: black;
+    border:0px;
+}
+.overlay-button2:hover
+{
+    box-shadow: 3px 3px 4px #b2ccee;
 }

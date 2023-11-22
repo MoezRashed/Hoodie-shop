@@ -13,6 +13,43 @@
         <link rel="icon" href="Images/Login-background-tilted.png" type="icon" />
         <link rel="stylesheet" href="css/mdb.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <!-- <script>
+            let products = null;
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    products = data;
+                    showDetail();
+            })
+    
+            function showDetail(){
+            let detail = document.querySelector('.detail');
+            let listProduct = document.querySelector('.listProduct');
+            let productId =  new URLSearchParams(window.location.search).get('id');
+            let thisProduct = products.filter(value => value.id == productId)[0];
+            //if there is no product with id = productId => return to home page
+            if(!thisProduct){
+                window.location.href = "/";
+            }
+    
+            detail.querySelector('.image img').src = thisProduct.image;
+            detail.querySelector('.name').innerText = thisProduct.name;
+            detail.querySelector('.price').innerText = '$' + thisProduct.price;
+            detail.querySelector('.description').innerText = '$' + thisProduct.description;
+    
+    
+            (products.filter(value => value.id != productId)).forEach(product => {
+                let newProduct = document.createElement('a');
+                newProduct.href = '/detail.html?id=' + product.id;
+                newProduct.classList.add('item');
+                newProduct.innerHTML = 
+                `<img src="${product.image}" alt="">
+                <h2>${product.name}</h2>
+                <div class="price">$${product.price}</div>`;
+                listProduct.appendChild(newProduct);
+            });
+        }
+        </script> -->
     </head>
     
     <body>
@@ -40,10 +77,23 @@
                 </ul>
             </nav>
         </header>
-        <div class="container">
-            
-        </div>
 
-
+        <section class="container-Product">
+            <div class="container py-5 mb-4">
+                <h3 class="text-center mb-5" style=" color: rgb(199,184,94);"><strong>Product Details</strong></h3>
+                  <div class="row">
+                    <div class="col align-self-start text-center">
+                        <img src="Images/embracethechaos.webp" width="400vw" draggable="false" >
+                    </div>
+                    <div class="col align-self-top text-center">
+                      <h3 class="text-center mb-5" style=" color: rgb(0,0,0); font-weight: bolder;">Moon knight <span style="color: #8EB4E5;">HOUDI</span></h3>
+                        <p><br><strong style="font-size: 32px;">999 LE</strong> </p>
+                        <br>
+                        <button class="overlay-button" disabled> Checkout</button>
+                        <button class="overlay-button2" disabled>Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </section>
      </body>
 </html>

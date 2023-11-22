@@ -24,7 +24,43 @@
                     search();
                 }
             }
-            
+        let products = null;
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+        })
+        function addDataToHTML(){
+        let listProductHTML = document.querySelector('.row');
+
+        if(products != null) // if has data
+        {
+            products.forEach(product => {
+                let newProduct = document.createElement('a');
+                newProduct.href = '/product.html?id=' + product.id;
+                newProduct.classList.add('item');
+                newProduct.innerHTML = 
+                `<div class="col-lg-4 col-md-12 mb-4">
+                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+                    <img src="${product.image}"
+                      class="w-100" />
+                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
+                        <div class="d-flex justify-content-start align-items-start h-100">
+                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">'${product.price}'</span></h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                      </div>
+                  </div>
+                </div>`;
+                listProductHTML.appendChild(newProduct);
+            }
+            )
+        }
+        }
+        
         </script>
     </head>
 
@@ -83,109 +119,10 @@
         <section id='bestsellers' style="background-color: #000;">
             <div class="container py-5">
               <h3 class="text-center mb-5" style=" color: rgb(199,184,94);"><strong>Best sellers</strong></h3>
-          
-              <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4">
-                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-                    <img src="Images/2e6a183741b6811ae5b3ed82d519290b.webp"
-                      class="w-100" />
-                    <a href="Product.html">
-                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
-                        <div class="d-flex justify-content-start align-items-start h-100">
-                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">999LE</span></h5>
-                        </div>
-                      </div>
-                      <div class="hover-overlay">
-                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-          
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-                    <img src="Images/TheConquererhoodief_b.webp"
-                      class="w-100" />
-                    <a href="Product.html">                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
-                        <div class="d-flex justify-content-start align-items-start h-100">
-                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">1299LE</span></h5>
-                        </div>
-                      </div>
-                      <div class="hover-overlay">
-                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-          
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-                    <img src="Images/5202045530850.webp"
-                      class="w-100" />
-                    <a href="Product.html">                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
-                        <div class="d-flex justify-content-start align-items-start h-100">
-                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">999LE</span></h5>
-                        </div>
-                      </div>
-                      <div class="hover-overlay">
-                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+              <div class="row" style="display: inline;">
+
               </div>
-          
-              <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4">
-                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded ripple-surface">
-                    <img src="Images/a72f9ffc8efcefc937d3fceb717e65d0.webp"
-                      class="w-100" />
-                    <a href="Product.html">
-                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
-                        <div class="d-flex justify-content-start align-items-start h-100">
-                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">1099LE</span></h5>
-                        </div>
-                      </div>
-                      <div class="hover-overlay">
-                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-          
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-                    <img src="Images/37b184b7c87f41a225a7bde27ca44dbd.webp"
-                      class="w-100" />
-                    <a href="Product.html">                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
-                        <div class="d-flex justify-content-start align-items-start h-100">
-                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">899LE</span></h5>
-                        </div>
-                      </div>
-                      <div class="hover-overlay">
-                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-                    <img src="Images/6041d7d8ea5505b98fbbc329661ed302.webp"
-                      class="w-100" />
-                    <a href="Product.html"></a>
-                      <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
-                        <div class="d-flex justify-content-start align-items-start h-100">
-                          <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">1099LE</span></h5>
-                        </div>
-                      </div>
-                      <div class="hover-overlay">
-                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        
             </div>
           </section>
 
