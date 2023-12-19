@@ -13,18 +13,9 @@
         <link rel="icon" href="Images/Login-background-tilted.png" type="icon" />
         <link rel="stylesheet" href="css/mdb.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <script defer src="app.js"></script>
         <script>
-            function search() {
-                // var searchTerm = document.getElementById('searchInput').value;
-                alert('Mafeesh database ya negm');
-            }
-    
-            function checkEnter(event) {
-                if (event.key === 'Enter') {
-                    search();
-                }
-            }
-            
+      
         </script>
     </head>
 
@@ -59,7 +50,8 @@
 
 
         <!-- louie duck section  -->
-        <section class="duck-duck-goose">
+        <div class="box">
+          <section class="duck-duck-goose">
 
             <div class="text col-lg-4 col-md-12 mb-4">
                 "Even a duck looks cool in <span class="brand">HOUDI-NI</span>"
@@ -75,12 +67,11 @@
 
             <!-- class="overlay-text" -->
             <img class="col-lg-4 col-md-12 mb-4" src="Images/Duck.gif" loop="false" draggable="false" loop="false">
-    
+        </div>
         </section>
-
         <!-- shop our best sellers -->
-
-        <section id='bestsellers' style="background-color: #000;">
+        <div class="box">
+          <section id='bestsellers' style="background-color: #000;">
             <div class="container py-5">
               <h3 class="text-center mb-5" style=" color: rgb(199,184,94);"><strong>Best sellers</strong></h3>
           
@@ -188,9 +179,10 @@
               </div>
             </div>
           </section>
-
+        </div>
         <!-- AI  -->
-        <section id="new" class="Ai">
+        <div class="box">
+          <section id="new" class="Ai">
             <div class="container py-5 mb-4">
                 <h3 class="text-center mb-5" style=" color: rgb(199,184,94);"><strong>New</strong></h3>
                   <div class="row">
@@ -206,7 +198,7 @@
                   </div>
             </div>
         </section>
-
+        </div>
         <!-- footer section -->
         <section>
             <!-- Footer -->

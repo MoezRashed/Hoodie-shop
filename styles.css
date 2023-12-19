@@ -21,6 +21,8 @@ header {
 body {
     margin: 0;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    align-items: center;
+    overflow-x: hidden;
 }
 .black-friday
 {
@@ -167,4 +169,19 @@ body {
 .overlay-button2:hover
 {
     box-shadow: 3px 3px 4px #b2ccee;
+}
+.box 
+{
+   transform: translateX(400%); 
+   transition: transform 2s ease;
+   align-items: center;
+   justify-content: center;
+}
+.box:nth-of-type(even)
+{
+    transform: translateX(-400%); 
+}
+.box.show 
+{
+    transform: translateX(0%);
 }

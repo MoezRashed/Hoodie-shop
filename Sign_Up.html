@@ -10,36 +10,43 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Kdam+Thmor+Pro&family=Marhey:wght@600&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="validation_login.js"></script>
-    <title>Login | Houdi-ni</title>
+    <script src="validation_signup.js"></script>
+    <title>Sign-up | Houdi-ni</title>
 </head>
 <body>
     
     <div class="wrapper">
         <form action="" onsubmit="validate()" method="post">
            
-            <h1>Login</h1>
+            <h1>Sign-up</h1>
 
+            <div class="input-box">
+                <input id="inputfname" type="text" placeholder="Firstname" >
+                
+            </div>
+            <div class="input-box">
+                <input id="inputlname" type="text" placeholder="Lastname" >
+                
+            </div>
+            <div class="input-box">
+                <input type="inputEmail" id="inputEmail" placeholder="Email address">
+                <i class='bx bxs-user'></i>
+            </div>
             <div class="input-box">
                 <input id="inputusername" type="text" placeholder="Username" >
                 <i class='bx bxs-user'></i>
             </div>
-
             <div class="input-box">
                 <input id="inputPassword" type="password" placeholder="Password" >
                 <i class='bx bxs-lock-alt' ></i>
             </div>
-
-            <div class="remember-forget">
-                <label><input type="checkbox">Remember me</label>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" draggable="false">Forgot password?</a>
+            <div class="input-box">
+                <input id="inputPassword2" type="password" placeholder="Re-enter Password" >
+                <i class='bx bxs-lock-alt' ></i>
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Sign-Up</button>
 
-            <div class="register-link">
-                <p>Don't have an account? <a href="Sign_Up.html" draggable="false">Register</a></p>
-            </div>
         </form>
     </div>
 </body>
