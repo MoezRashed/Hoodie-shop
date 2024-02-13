@@ -68,6 +68,9 @@ body {
     text-decoration: none;
     margin-right: 20px;
     font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
     /* flex: 1; */
     /* border: 4px solid brown; */
     margin:17px;
@@ -76,10 +79,26 @@ body {
     margin-bottom: 0px;
 
 }
+
+/* Style the logout button */
+input[type="submit"] {
+    text-decoration: none;
+    background-color: #ff0000; /* Red background color */
+    color: #fff; 
+    font-size: 18px;/* White text color */
+    padding: 3px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
 .nav-list a
 {
     text-decoration: none;
     color: black;
+    padding: 3px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -173,7 +192,7 @@ body {
 .box 
 {
    transform: translateX(400%); 
-   transition: transform 2s ease;
+   transition: transform 0.3s ease;
    align-items: center;
    justify-content: center;
 }
